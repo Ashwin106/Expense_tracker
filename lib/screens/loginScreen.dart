@@ -54,7 +54,7 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: 8),
               
               const Text(
-                'Enter your details to access your ExpenseTracker.',
+                'Enter your details to access your Spendwise.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
