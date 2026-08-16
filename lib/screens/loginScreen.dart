@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
@@ -41,7 +43,7 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: 32),
               
               const Text(
-                'Welcome Back',
+                'Welcome',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 28,
@@ -54,7 +56,7 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: 8),
               
               const Text(
-                'Enter your details to access your Spendwise.',
+                'Enter your details to access your Spendwise',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 16,
@@ -181,7 +183,8 @@ class LoginScreen extends StatelessWidget {
               // Social Login Buttons
               OutlinedButton.icon(
                 onPressed: () {},
-                icon: const Icon(Icons.language, size: 20),
+               icon: const FaIcon(FontAwesomeIcons.google, size: 20),
+                //icon: const Icon(Icons.language, size: 20),
                 label: const Text('Continue with Google'),
                 style: OutlinedButton.styleFrom(
                   foregroundColor: primaryColor,
@@ -197,7 +200,7 @@ class LoginScreen extends StatelessWidget {
               
               OutlinedButton.icon(
                 onPressed: () {},
-                icon: const Icon(Icons.laptop_mac, size: 20),
+                icon: const Icon(Icons.apple, size: 20),
                 label: const Text('Continue with Apple'),
                 style: OutlinedButton.styleFrom(
                   foregroundColor: primaryColor,
